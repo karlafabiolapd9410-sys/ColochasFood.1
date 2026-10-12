@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colocha's Food | Comida caribeña con sabor de casa</title>
+  <meta name="description" content="Colocha's Food: comida caribeña con sabor de casa. Rice and beans, patty, plántinta, patacones y bebidas naturales en Heredia, Costa Rica.">
+
+  <!-- Tipografías (si no cargan, el navegador usa las de respaldo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Íconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-hoja" viewBox="0 0 64 64"><path d="M32 60C32 36 30 18 8 6c10 2 18 6 24 14 6-8 14-12 24-14-22 12-24 30-24 54z"/></symbol>
+    <symbol id="i-sol" viewBox="0 0 64 64"><circle cx="32" cy="32" r="12"/><path d="M32 4v10M32 50v10M4 32h10M50 32h10M12 12l7 7M45 45l7 7M52 12l-7 7M19 45l-7 7" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ENCABEZADO / MENÚ ============ -->
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a href="#inicio" class="logo" aria-label="Colocha's Food, ir al inicio">
+        <img src="img/logo.png" alt="" width="56" height="56">
+        <span>Colocha's <small>Food</small></span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menuNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu-comida">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ 1. INICIO (HERO) ============ -->
+    <section class="hero" id="inicio">
+      <svg class="deco deco--hoja h1" aria-hidden="true"><use href="#i-hoja"/></svg>
+      <svg class="deco deco--sol h2" aria-hidden="true"><use href="#i-sol"/></svg>
+      <svg class="deco deco--hoja h3" aria-hidden="true"><use href="#i-hoja"/></svg>
+
+      <div class="hero__contenido">
+        <img class="hero__logo" src="img/logo.png" alt="Logo de Colocha's Food: sombrero de chef, palmera y la frase Sabor caribeño en cada bocado" width="150" height="150">
+        <h1>Colocha's Food</h1>
+        <p class="hero__mensaje">Comida caribeña con sabor de casa</p>
+        <p class="hero__platos">Rice and beans · Patty · Patacones</p>
+        <a href="#menu-comida" class="boton">Ver el menú</a>
+      </div>
+    </section>
+
+    <!-- ============ 2. NOSOTROS ============ -->
+    <section class="seccion" id="nosotros">
+      <h2 class="titulo">Nosotros</h2>
+      <div class="nosotros">
+        <article class="tarjeta tarjeta--amarilla">
+          <h3>Historia</h3>
+          <p>Colocha's Food nace como una propuesta para compartir el gusto por la comida caribeña y sus sabores tradicionales. La idea es ofrecer platillos preparados con dedicación, en un ambiente cercano y familiar, para que cada cliente disfrute una comida rica y se lleve una buena experiencia.</p>
+        </article>
+        <article class="tarjeta tarjeta--verde">
+          <h3>Misión</h3>
+          <p>Ofrecer comida caribeña con sabor casero y atención cercana, procurando que cada cliente disfrute una experiencia agradable.</p>
+        </article>
+        <article class="tarjeta tarjeta--roja">
+          <h3>Visión</h3>
+          <p>Ser un emprendimiento reconocido en la comunidad por su sabor, calidad, trato amable y una presencia digital que facilite a los clientes conocer sus productos.</p>
+        </article>
+        <article class="tarjeta tarjeta--naranja">
+          <h3>Valores</h3>
+          <p>Sabor casero, amabilidad, responsabilidad, higiene, compromiso con el cliente y respeto por la comunidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 3. PRODUCTOS / MENÚ ============ -->
+    <section class="seccion seccion--oscura" id="menu-comida">
+      <h2 class="titulo">Menú</h2>
+      <p class="seccion__texto">Estos son nuestros platillos. Para pedir, escríbenos por WhatsApp o llámanos al <a href="tel:+50662954649">6295 4649</a>.</p>
+
+      <div class="productos">
+
+        <article class="producto">
+          <img src="img/rice-and-beans-costilla.jpg" alt="Plato de rice and beans con carne guisada, ensalada y plátanos" width="720" height="631" loading="lazy">
+          <div class="producto__texto">
+            <h3>Rice and beans</h3>
+            <p>Acompañado de una opción a elegir: pollo caribeño, costilla, pescado u oxtail. Incluye ensalada y plátanos en miel.</p>
+          </div>
+          <p class="precio">₡4 500</p>
+          <a class="boton boton--chico" data-pedido="Rice and beans" href="#contacto">Pedir por WhatsApp</a>
+        </article>
+
+        <article class="producto">
+          <img src="img/patty-relleno.jpg" alt="Tres patties dorados en un plato blanco, uno partido que muestra el relleno de carne" width="572" height="428" loading="lazy">
+          <div class="producto__texto">
+            <h3>Patty</h3>
+            <p>Pastel relleno estilo caribeño. Se venden 2 unidades.</p>
+          </div>
+          <p class="precio">₡1 000</p>
+          <a class="boton boton--chico" data-pedido="Patty (2 unidades)" href="#contacto">Pedir por WhatsApp</a>
+        </article>
+
+        <article class="producto">
+          <img src="img/plantinta.jpg" alt="Bandeja con plántintas, pasteles en forma de media luna recién horneados" width="712" height="1000" loading="lazy">
+          <div class="producto__texto">
+            <h3>Plántinta</h3>
+            <p>Especialidad de la casa. Se venden 2 unidades.</p>
+          </div>
+          <p class="precio">₡1 000</p>
+          <a class="boton boton--chico" data-pedido="Plántinta (2 unidades)" href="#contacto">Pedir por WhatsApp</a>
+        </article>
+
+        <article class="producto">
+          <img src="img/patacones.jpg" alt="Patacones dorados con cuatro acompañamientos: pico de gallo, carne desmenuzada, frijoles y guacamole" width="588" height="396" loading="lazy">
+          <div class="producto__texto">
+            <h3>Patacones</h3>
+            <p>Con sus acompañamientos.</p>
+          </div>
+          <p class="precio">₡3 500</p>
+          <a class="boton boton--chico" data-pedido="Patacones con acompañamientos" href="#contacto">Pedir por WhatsApp</a>
+        </article>
+
+        <article class="producto">
+          <img src="img/bebida-natural.jpg" alt="Vaso con bebida natural anaranjada, hielo y una rodaja de limón" width="537" height="398" loading="lazy">
+          <div class="producto__texto">
+            <h3>Bebidas</h3>
+            <p>Hiel (agua sapo) y frescos naturales.</p>
+          </div>
+          <p class="precio">₡2 000</p>
+          <a class="boton boton--chico" data-pedido="Bebida" href="#contacto">Pedir por WhatsApp</a>
+        </article>
+
+      </div>
+
+      <!-- Carrusel de platillos destacados -->
+      <h3 class="subtitulo">Platillos destacados</h3>
+      <div class="carrusel" id="carrusel" aria-roledescription="carrusel" aria-label="Platillos destacados">
+        <div class="carrusel__ventana">
+          <ul class="carrusel__pista" id="carruselPista">
+            <li class="carrusel__diapositiva" aria-label="1 de 7">
+              <img src="img/plato-caribeno-estrella.jpg" alt="Plato caribeño con carne en salsa, arroz, plátano frito, ensalada y carambola" width="720" height="960" loading="lazy">
+              <p>Plato caribeño con arroz, plátano y ensalada</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="2 de 7">
+              <img src="img/rice-and-beans-costilla.jpg" alt="Plato de rice and beans con carne guisada, ensalada y plátanos" width="720" height="631" loading="lazy">
+              <p>Rice and beans con carne guisada</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="3 de 7">
+              <img src="img/pollo-guisado-patacones.jpg" alt="Plato con pollo guisado, arroz, ensalada y patacones" width="720" height="540" loading="lazy">
+              <p>Pollo guisado con arroz y patacones</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="4 de 7">
+              <img src="img/patty-relleno.jpg" alt="Tres patties dorados en un plato blanco, uno partido que muestra el relleno de carne" width="572" height="428" loading="lazy">
+              <p>Patties con relleno de carne</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="5 de 7">
+              <img src="img/plantinta.jpg" alt="Bandeja con plántintas, pasteles en forma de media luna recién horneados" width="712" height="1000" loading="lazy">
+              <p>Plántintas recién horneadas</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="6 de 7">
+              <img src="img/patacones.jpg" alt="Patacones dorados con cuatro acompañamientos: pico de gallo, carne desmenuzada, frijoles y guacamole" width="588" height="396" loading="lazy">
+              <p>Patacones con sus acompañamientos</p>
+            </li>
+            <li class="carrusel__diapositiva" aria-label="7 de 7">
+              <img src="img/bebida-natural.jpg" alt="Vaso con bebida natural anaranjada y limón" width="537" height="398" loading="lazy">
+              <p>Frescos naturales</p>
+            </li>
+          </ul>
+        </div>
+        <div class="carrusel__controles">
+          <button class="carrusel__flecha" id="carruselAnterior" type="button" aria-label="Foto anterior">&#8249;</button>
+          <div class="carrusel__puntos" id="carruselPuntos"></div>
+          <button class="carrusel__flecha" id="carruselSiguiente" type="button" aria-label="Foto siguiente">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. GALERÍA ============ -->
+    <section class="seccion" id="galeria">
+      <h2 class="titulo">Galería</h2>
+      <p class="seccion__texto">Toca una foto para verla más grande.</p>
+
+      <ul class="galeria" id="galeriaLista">
+        <li><button type="button" class="galeria-item"><img src="img/plato-caribeno-estrella.jpg" alt="Plato caribeño con carne en salsa, arroz, plátano frito, ensalada y carambola" width="720" height="960" loading="lazy"></button></li>
+        <li><button type="button" class="galeria-item"><img src="img/rice-and-beans-costilla.jpg" alt="Plato de rice and beans con carne guisada, ensalada y plátanos" width="720" height="631" loading="lazy"></button></li>
+        <li><button type="button" class="galeria-item"><img src="img/pollo-guisado-patacones.jpg" alt="Plato con pollo guisado, arroz, ensalada y patacones" width="720" height="540" loading="lazy"></button></li>
+        <li><button type="button" class="galeria-item"><img src="img/plantinta.jpg" alt="Bandeja con plántintas, pasteles en forma de media luna recién horneados" width="712" height="1000" loading="lazy"></button></li>
+        <li><button type="button" class="galeria-item"><img src="img/bebida-natural.jpg" alt="Vaso con bebida natural anaranjada y limón" width="537" height="398" loading="lazy"></button></li>
+        <li><button type="button" class="galeria-item"><img src="img/patacones.jpg" alt="Patacones dorados con cuatro acompañamientos: pico de gallo, carne desmenuzada, frijoles y guacamole" width="588" height="396" loading="lazy"></button></li>
+      </ul>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="seccion seccion--oscura" id="preguntas">
+      <h2 class="titulo">Preguntas frecuentes</h2>
+      <div class="faq">
+
+        <div class="faq__item">
+          <h3><button class="faq__pregunta" type="button" aria-expanded="false" aria-controls="resp1" id="preg1">¿Qué incluye el rice and beans? <span aria-hidden="true">+</span></button></h3>
+          <div class="faq__respuesta" id="resp1" role="region" aria-labelledby="preg1" hidden>
+            <p>Viene acompañado de una opción a elegir: pollo caribeño, costilla, pescado u oxtail. Incluye ensalada y plátanos en miel.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__pregunta" type="button" aria-expanded="false" aria-controls="resp2" id="preg2">¿Cómo puedo hacer mi pedido? <span aria-hidden="true">+</span></button></h3>
+          <div class="faq__respuesta" id="resp2" role="region" aria-labelledby="preg2" hidden>
+            <p>Llámanos o escríbenos por WhatsApp al 6295 4649, o usa el formulario de contacto. También puedes tocar el botón "Pedir por WhatsApp" de cada platillo.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__pregunta" type="button" aria-expanded="false" aria-controls="resp3" id="preg3">¿Qué bebidas tienen? <span aria-hidden="true">+</span></button></h3>
+          <div class="faq__respuesta" id="resp3" role="region" aria-labelledby="preg3" hidden>
+            <p>Tenemos hiel (agua sapo) y frescos naturales.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__pregunta" type="button" aria-expanded="false" aria-controls="resp4" id="preg4">Tengo una alergia, ¿qué hago? <span aria-hidden="true">+</span></button></h3>
+          <div class="faq__respuesta" id="resp4" role="region" aria-labelledby="preg4" hidden>
+            <p>Consúltanos por teléfono o WhatsApp antes de pedir, para confirmar los ingredientes del platillo que te interesa.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 5. CONTACTO ============ -->
+    <section class="seccion" id="contacto">
+      <h2 class="titulo">Contacto</h2>
+
+      <div class="contacto">
+        <div class="contacto__datos tarjeta tarjeta--amarilla">
+          <h3>Información de contacto</h3>
+          <ul>
+            <li><strong>Teléfono / WhatsApp:</strong> <a href="tel:+50662954649">6295 4649</a> ·
+              <a href="https://wa.me/50662954649" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a></li>
+            <!-- TODO: poner el correo real del negocio -->
+            <li><strong>Correo electrónico:</strong> por confirmar</li>
+            <!-- TODO: poner la dirección real del local -->
+            <li><strong>Dirección:</strong> por confirmar (Heredia, Costa Rica)</li>
+            <!-- TODO: cuando haya enlace real de Facebook e Instagram, convertirlos en <a href="..."> -->
+            <li><strong>Facebook:</strong> PD Karla</li>
+            <li><strong>Instagram:</strong> Colocha's food</li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formContacto" novalidate>
+          <h3>Formulario de contacto</h3>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-describedby="error-nombre">
+            <p class="error" id="error-nombre" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required aria-describedby="error-correo">
+            <p class="error" id="error-correo" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required aria-describedby="error-mensaje"></textarea>
+            <p class="error" id="error-mensaje" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="boton">Enviar mensaje</button>
+          <p class="formulario__estado" id="formEstado" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="pie">
+    <img src="img/logo.png" alt="" width="64" height="64">
+    <p>© <span id="anio">2026</span> Colocha's Food · Sabor caribeño en cada bocado</p>
+    <p class="pie__chico">Proyecto de Desarrollo Web · Colegio Técnico Profesional de Heredia</p>
+  </footer>
+
+  <button class="arriba" id="botonArriba" type="button" aria-label="Volver arriba" hidden>&#8593;</button>
+
+  <!-- Visor de imágenes de la galería -->
+  <dialog class="visor" id="visor" aria-label="Imagen ampliada">
+    <button class="visor__cerrar" id="visorCerrar" type="button" aria-label="Cerrar imagen">&times;</button>
+    <button class="visor__flecha" id="visorAnterior" type="button" aria-label="Imagen anterior">&#8249;</button>
+    <figure>
+      <img id="visorImagen" alt="">
+      <figcaption id="visorTexto"></figcaption>
+    </figure>
+    <button class="visor__flecha" id="visorSiguiente" type="button" aria-label="Imagen siguiente">&#8250;</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
